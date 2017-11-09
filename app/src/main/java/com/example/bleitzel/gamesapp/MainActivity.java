@@ -1,20 +1,27 @@
 package com.example.bleitzel.gamesapp;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
-import android.view.View;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+    Fragment contentFragment = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -80,14 +87,34 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_TTT) {}
+        if (id == R.id.nav_TTT) {
+            contentFragment = new TTTFragment();
+        }
 
-        else if (id == R.id.nav_Checkers) {}
+        else if (id == R.id.nav_Checkers) {
+            contentFragment = new CheckersFragment();
+        }
 
-        else if (id == R.id.nav_Chess) {}
+        else if (id == R.id.nav_Minecraft) {
+            contentFragment = new MinecraftFragment();
+        }
 
-        else if (id == R.id.nav_Roblox) {}
+        else if (id == R.id.nav_CODWWII) {
+            contentFragment = new CODWWII();
+        }
 
+        else if (id == R.id.nav_Chess) {
+            contentFragment = new ChessFragment();
+        }
+
+        else if (id == R.id.nav_Roblox) {
+            contentFragment = new RobloxFragment();
+        }
+        if (contentFragment != null) {
+            FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+            ft.replace(R.id.content_frame, contentFragment);
+            ft.commit();
+        }
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
