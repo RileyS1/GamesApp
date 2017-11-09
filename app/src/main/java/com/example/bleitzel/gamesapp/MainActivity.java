@@ -80,19 +80,13 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_TTT) {
-            // Handle the camera action
-        } else if (id == R.id.nav_Checkers) {
+        if (id == R.id.nav_TTT) {}
 
-        } else if (id == R.id.nav_Chess) {
+        else if (id == R.id.nav_Checkers) {}
 
-        } else if (id == R.id.nav_Roblox) {
+        else if (id == R.id.nav_Chess) {}
 
-        } else if (id == R.id.nav_Minecraft) {
-
-        } else if (id == R.id.nav_CODWWII) {
-
-        }
+        else if (id == R.id.nav_Roblox) {}
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
