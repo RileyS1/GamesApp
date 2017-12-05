@@ -9,5 +9,5 @@ import android.view.LayoutInflater;
  * Created by bleitzel on 11/9/2017.
  */
 
-public class CODWWII extends Fragment {
+public class CODWWIIFragment extends Fragment {
 }
