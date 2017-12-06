@@ -1,5 +1,6 @@
 package com.example.bleitzel.gamesapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -32,8 +33,13 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        LoginButton = (Button) findViewById(R.id.LoginButton);
-        LoginButtonOnClick loginButtonOnClick = new LoginButtonOnClick();
+        LoginButton = (Button) findViewById(R.id.login_button);
+
+        LoginButton.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                startActivity(new Intent(MainActivity.this, LoginActivity.class));
+            }
+        });
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
