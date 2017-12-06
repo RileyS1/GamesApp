@@ -108,21 +108,11 @@ public class MainActivity extends AppCompatActivity
             contentFragment = new CheckersFragment();
         }
 
-        else if (id == R.id.nav_Minecraft) {
-            contentFragment = new MinecraftFragment();
-        }
-
-        else if (id == R.id.nav_CODWWII) {
-            contentFragment = new CODWWIIFragment();
-        }
 
         else if (id == R.id.nav_Chess) {
             contentFragment = new ChessFragment();
         }
 
-        else if (id == R.id.nav_Roblox) {
-            contentFragment = new RobloxFragment();
-        }
         if (contentFragment != null) {
             FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
             ft.replace(R.id.content_frame, contentFragment);
