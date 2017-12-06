@@ -14,11 +14,12 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
+
 /**
  * Created by bleitzel on 12/5/2017.
  */
 
-public class LoginFragment extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
 
     private final String APP_ID = "";
     private final String SECRET_KEY = "";

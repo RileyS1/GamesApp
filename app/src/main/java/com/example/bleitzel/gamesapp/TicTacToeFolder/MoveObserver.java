@@ -5,4 +5,6 @@ package com.example.bleitzel.gamesapp.TicTacToeFolder;
  */
 
 public interface MoveObserver {
+    //determines which player makes a move and which position the player moves to
+    boolean move(Player player, int[] position);
 }
