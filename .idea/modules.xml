@@ -4,10 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/GamesApp.iml" filepath="$PROJECT_DIR$/GamesApp.iml" />
       <module fileurl="file://C:\Users\rsmyser\Desktop\GamesApp\GamesApp\GamesApp.iml" filepath="C:\Users\rsmyser\Desktop\GamesApp\GamesApp\GamesApp.iml" />
-      <module fileurl="file://C:\Users\nvoorstad\Desktop\GamesApp\GamesApp.iml" filepath="C:\Users\nvoorstad\Desktop\GamesApp\GamesApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://C:\Users\rsmyser\Desktop\GamesApp\GamesApp\app\app.iml" filepath="C:\Users\rsmyser\Desktop\GamesApp\GamesApp\app\app.iml" />
-      <module fileurl="file://C:\Users\nvoorstad\Desktop\GamesApp\app\app.iml" filepath="C:\Users\nvoorstad\Desktop\GamesApp\app\app.iml" />
     </modules>
   </component>
 </project>
