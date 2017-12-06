@@ -1,7 +1,5 @@
 package com.example.bleitzel.gamesapp;
 
-import android.app.ProgressDialog;
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -17,7 +15,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
+
+import com.example.bleitzel.gamesapp.TicTacToeFolder.TTTFragment;
 
 
 
@@ -110,21 +109,11 @@ public class MainActivity extends AppCompatActivity
             contentFragment = new CheckersFragment();
         }
 
-        else if (id == R.id.nav_Minecraft) {
-            contentFragment = new MinecraftFragment();
-        }
-
-        else if (id == R.id.nav_CODWWII) {
-            contentFragment = new CODWWIIFragment();
-        }
 
         else if (id == R.id.nav_Chess) {
             contentFragment = new ChessFragment();
         }
 
-        else if (id == R.id.nav_Roblox) {
-            contentFragment = new RobloxFragment();
-        }
         if (contentFragment != null) {
             FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
             ft.replace(R.id.content_frame, contentFragment);

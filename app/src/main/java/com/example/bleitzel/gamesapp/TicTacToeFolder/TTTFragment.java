@@ -1,4 +1,4 @@
-package com.example.bleitzel.gamesapp;
+package com.example.bleitzel.gamesapp.TicTacToeFolder;
 
 
 import android.os.Bundle;
@@ -9,5 +9,6 @@ import android.view.LayoutInflater;
  * Created by bleitzel on 11/9/2017.
  */
 
-public class CODWWIIFragment extends Fragment {
+public class TTTFragment extends Fragment {
+
 }
