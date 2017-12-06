@@ -1,5 +1,6 @@
 package com.example.bleitzel.gamesapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -16,7 +17,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.bleitzel.gamesapp.TicTacToeFolder.TTTFragment;
+import com.example.bleitzel.gamesapp.TicTacToeFolder.CLP;
 
 
 public class MainActivity extends AppCompatActivity
@@ -24,6 +25,8 @@ public class MainActivity extends AppCompatActivity
     Fragment contentFragment = null;
 
     private Button LoginButton;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -101,7 +104,7 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_TTT) {
-            contentFragment = new TTTFragment();
+            contentFragment = new Fragment();
         }
 
         else if (id == R.id.nav_Checkers) {

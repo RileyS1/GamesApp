@@ -19,6 +19,12 @@ import android.widget.Toast;
  * Created by bleitzel on 12/5/2017.
  */
 
+import android.app.ProgressDialog;
+import android.content.Intent;
+import android.util.Log;
+
+import com.example.bleitzel.gamesapp.R;
+
 public class LoginActivity extends AppCompatActivity {
 
     private final String APP_ID = "";
@@ -115,7 +121,7 @@ public class LoginActivity extends AppCompatActivity {
                     @Override
                     public void handleResponse(BackendlessUser response) {
                         Toast.makeText(view.getContext(), response.getProperty("name") + " logged in successfully!", Toast.LENGTH_SHORT).show();
-                        Intent intent = new Intent(LoginActivity.this, TripListActivity.class);
+                        Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                         startActivity(intent);
                     }
 
