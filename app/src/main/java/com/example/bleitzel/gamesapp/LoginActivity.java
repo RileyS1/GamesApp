@@ -47,7 +47,7 @@ public class LoginActivity extends AppCompatActivity {
         mPasswordEdit = (EditText) findViewById(R.id.enter_password);
         SignUpTextOnClick signUpTextOnClick = new SignUpTextOnClick();
         mSignUpTextView.setOnClickListener(signUpTextOnClick);
-        Backendless.initApp(this, APP_ID, SECRET_KEY);
+
     }
 
     @Override
