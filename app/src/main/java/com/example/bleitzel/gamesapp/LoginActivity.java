@@ -1,6 +1,5 @@
 package com.example.bleitzel.gamesapp;
 
-import android.app.Fragment;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,6 +11,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.backendless.Backendless;
+import com.backendless.BackendlessUser;
+import com.backendless.async.callback.AsyncCallback;
+import com.backendless.exceptions.BackendlessFault;
 
 
 
@@ -29,8 +33,8 @@ public class LoginActivity extends AppCompatActivity {
     private Button mSignUpButton;
     private Button mLoginButton;
     private TextView mSignUpTextView;
-    private final String TAG = this.getClass().getName();}
-/*
+    private final String TAG = this.getClass().getName();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -115,7 +119,7 @@ public class LoginActivity extends AppCompatActivity {
                     @Override
                     public void handleResponse(BackendlessUser response) {
                         Toast.makeText(view.getContext(), response.getProperty("name") + " logged in successfully!", Toast.LENGTH_SHORT).show();
-                        Intent intent = new Intent(LoginActivity.this, TripListActivity.class);
+                        Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                         startActivity(intent);
                     }
 
@@ -177,5 +181,6 @@ public class LoginActivity extends AppCompatActivity {
 
             }
         }
-    }*/
+    }
 
+}
