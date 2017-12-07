@@ -12,6 +12,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+import com.backendless.Backendless;
+import com.backendless.BackendlessUser;
+import com.backendless.async.callback.AsyncCallback;
+import com.backendless.exceptions.BackendlessFault;
 
 
 
@@ -21,16 +25,16 @@ import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity {
 
-    private final String APP_ID = "";
-    private final String SECRET_KEY = "";
+    private final String APP_ID = "01A36FC8-2A48-6E25-FF7B-930985C03700";
+    private final String SECRET_KEY = "BA874005-03BA-0437-FF77-8BD65BCF6000";
     private EditText mNameEdit;
     private EditText mEmailEdit;
     private EditText mPasswordEdit;
     private Button mSignUpButton;
     private Button mLoginButton;
     private TextView mSignUpTextView;
-    private final String TAG = this.getClass().getName();}
-/*
+    private final String TAG = this.getClass().getName();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -176,5 +180,5 @@ public class LoginActivity extends AppCompatActivity {
 
             }
         }
-    }*/
+    }
 
