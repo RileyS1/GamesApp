@@ -10,4 +10,5 @@ import android.view.LayoutInflater;
  */
 
 public class CheckersFragment extends Fragment {
+
 }
