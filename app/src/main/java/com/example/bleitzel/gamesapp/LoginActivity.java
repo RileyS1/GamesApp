@@ -1,5 +1,6 @@
 package com.example.bleitzel.gamesapp;
 
+import android.app.Fragment;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,7 +12,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.backendless.Backendless;
 import com.backendless.BackendlessUser;
 import com.backendless.async.callback.AsyncCallback;
@@ -25,8 +25,8 @@ import com.backendless.exceptions.BackendlessFault;
 
 public class LoginActivity extends AppCompatActivity {
 
-    private final String APP_ID = "";
-    private final String SECRET_KEY = "";
+    private final String APP_ID = "01A36FC8-2A48-6E25-FF7B-930985C03700";
+    private final String SECRET_KEY = "BA874005-03BA-0437-FF77-8BD65BCF6000";
     private EditText mNameEdit;
     private EditText mEmailEdit;
     private EditText mPasswordEdit;
@@ -137,7 +137,7 @@ public class LoginActivity extends AppCompatActivity {
         }
     }
 
-    private class SignUpButtonOnClick implements View.OnClickListener{
+    private class SignUpButtonOnClick implements View.OnClickListener {
 
         @Override
         public void onClick(View view) {
@@ -174,12 +174,11 @@ public class LoginActivity extends AppCompatActivity {
                         }
                     });
                 }
-            }
-            else {
+            } else {
                 warnUser(getString(R.string.empty_field_signup_error));
 
             }
         }
     }
+    }
 
-}

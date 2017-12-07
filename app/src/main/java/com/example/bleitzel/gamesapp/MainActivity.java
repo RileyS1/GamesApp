@@ -105,10 +105,13 @@ public class MainActivity extends AppCompatActivity
 
         if (id == R.id.nav_TTT) {
             contentFragment = new Fragment();
+            setTitle(R.string.ttt_title);
         }
 
         else if (id == R.id.nav_Checkers) {
             contentFragment = new CheckersFragment();
+            setTitle(R.string.checkers_title);
+
         }
 
         if (contentFragment != null) {
