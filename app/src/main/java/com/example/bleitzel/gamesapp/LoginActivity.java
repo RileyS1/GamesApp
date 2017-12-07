@@ -29,8 +29,8 @@ public class LoginActivity extends AppCompatActivity {
     private Button mSignUpButton;
     private Button mLoginButton;
     private TextView mSignUpTextView;
-    private final String TAG = this.getClass().getName();
-
+    private final String TAG = this.getClass().getName();}
+/*
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -176,5 +176,5 @@ public class LoginActivity extends AppCompatActivity {
 
             }
         }
-    }
+    }*/
 

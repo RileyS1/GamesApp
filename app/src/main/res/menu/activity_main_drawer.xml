@@ -12,25 +12,5 @@
             android:title="Checkers" />
     </group>
 
-    <item android:title="Games in progress">
-        <menu>
-            <item
-                android:id="@+id/nav_Minecraft"
-                android:icon="@drawable/ic_view_comfy_black_24dp"
-                android:title="Minecraft" />
-            <item
-                android:id="@+id/nav_CODWWII"
-                android:icon="@drawable/ic_menu_send"
-                android:title="COD WWII" />
-            <item
-                android:id="@+id/nav_Chess"
-                android:icon="@drawable/ic_menu_slideshow"
-                android:title="Chess" />
-            <item
-                android:id="@+id/nav_Roblox"
-                android:icon="@drawable/ic_menu_manage"
-                android:title="Roblox" />
-        </menu>
-    </item>
 
 </menu>

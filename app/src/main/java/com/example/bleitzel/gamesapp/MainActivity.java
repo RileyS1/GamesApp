@@ -117,11 +117,6 @@ public class MainActivity extends AppCompatActivity
             contentFragment = new CheckersFragment();
         }
 
-
-        else if (id == R.id.nav_Chess) {
-            contentFragment = new ChessFragment();
-        }
-
         if (contentFragment != null) {
             FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
             ft.replace(R.id.content_frame, contentFragment);
