@@ -13,6 +13,8 @@
     <string name="empty_field_signup_error">Be sure you have entered a valid email address, password, and name.</string>
     <string name="games_app">Games App</string>
     <string name="todo">TODO</string>
+    <string name="tic_tac_toe" />
+    <string name="checkers" />
 </resources>
 
 
