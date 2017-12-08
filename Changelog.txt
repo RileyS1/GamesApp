@@ -4,3 +4,8 @@ Tic Tac Toe Files Added
 implemented GitHub
 Layout Adjusted
 Bug Fixes
+0.0.2 - 12-8-17
+Improved Tic Tac Toe
+Implemented Backendless
+Bug Fixes
+Layout Adjusted
