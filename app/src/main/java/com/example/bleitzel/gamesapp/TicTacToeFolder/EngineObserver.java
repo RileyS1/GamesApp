@@ -6,7 +6,7 @@ package com.example.bleitzel.gamesapp.TicTacToeFolder;
 
 public interface EngineObserver {
 
-        void makeMove(TicTacToeBoard.Board board, Engine engine);
+       void makeMove(TicTacToeBoard.Board board, Engine engine);
         //notifies player that it is their turn and they have to make a move
 
         void loseGame(TicTacToeBoard.Board board, Engine engine);

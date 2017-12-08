@@ -44,7 +44,7 @@ public class TicTacToeBoard {
                 return false;
             }
         }
-        public boolean move(Player player, int[] position)
+        public boolean move(sPlayer player, int[] position)
         {
             // Checks if position is already taken.
             if ( getPlayerAtPosition(position) == null)
@@ -66,7 +66,7 @@ public class TicTacToeBoard {
                 {
                     int[] pos = { x, y };
                     Player curr = getPlayerAtPosition(pos);
-                    clone.move(curr, pos);
+                    clone.move((sPlayer) curr, pos);
                 }
             }
 

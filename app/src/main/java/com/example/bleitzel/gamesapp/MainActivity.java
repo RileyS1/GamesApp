@@ -26,7 +26,6 @@ public class MainActivity extends AppCompatActivity
     Fragment contentFragment = null;
 
     private Button LoginButton;
-    private Button TTTButton;
 
 
 
@@ -39,8 +38,6 @@ public class MainActivity extends AppCompatActivity
 
         LoginButton = (Button) findViewById(R.id.LoginButton);
         LoginButtonOnClick loginButtonOnClick = new LoginButtonOnClick();
-
-        TTTButton = (Button) findViewById(R.id.nav_TTT);
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
