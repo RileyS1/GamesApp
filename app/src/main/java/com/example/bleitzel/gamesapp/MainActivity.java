@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity
 
         @Override
         public void onClick(final View view) {
-            contentFragment = new Fragment();
+            startActivity(new Intent(MainActivity.this, Engine.class));
         }
     }
 
