@@ -110,6 +110,7 @@ public class LoginActivity extends AppCompatActivity {
             String password = mPasswordEdit.getText().toString();
             email = email.trim();
             password = password.trim();
+
             if (!email.isEmpty() && !password.isEmpty()) {
                 final ProgressDialog pDialog = ProgressDialog.show(LoginActivity.this,
                         "Please Wait!",
@@ -122,6 +123,7 @@ public class LoginActivity extends AppCompatActivity {
                         Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                         startActivity(intent);
                     }
+
 
                     @Override
                     public void handleFault(BackendlessFault fault) {

@@ -18,7 +18,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.bleitzel.gamesapp.TicTacToeFolder.CLP;
-
+import com.example.bleitzel.gamesapp.TicTacToeFolder.Engine;
 
 
 public class MainActivity extends AppCompatActivity
@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity
     Fragment contentFragment = null;
 
     private Button LoginButton;
+    private Button TTTButton;
 
 
 
@@ -39,6 +40,9 @@ public class MainActivity extends AppCompatActivity
         LoginButton = (Button) findViewById(R.id.LoginButton);
         LoginButtonOnClick loginButtonOnClick = new LoginButtonOnClick();
 
+        TTTButton = (Button) findViewById(R.id.LoginButton);
+        TTTButtonOnClick tttButtonOnClickButtonOnClick = new TTTButtonOnClick();
+
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -47,6 +51,15 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+    }
+
+    private class TTTButtonOnClick implements  View.OnClickListener{
+
+        @Override
+        public void onClick(View view) {
+            startActivity(new Intent(MainActivity.this, Engine.class));
+        }
+
     }
 
     private class LoginButtonOnClick implements  View.OnClickListener{
