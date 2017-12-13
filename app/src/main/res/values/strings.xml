@@ -1,8 +1,20 @@
 <resources>
     <string name="app_name">GamesApp</string>
-
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-
     <string name="action_settings">Settings</string>
+    <string name="email_hint">Email</string>
+    <string name="login_button_label">LOG IN</string>
+    <string name="sign_up_text">No account? Click here to sign up.</string>
+    <string name="password_hint">Password</string>
+    <string name="name_hint">Name</string>
+    <string name="sign_up_label">Sign me up!</string>
+    <string name="authentication_error_title">User Authentication Error!</string>
+    <string name="empty_field_signup_error">Be sure you have entered a valid email address, password, and name.</string>
+    <string name="games_app">Games App</string>
+    <string name="todo">TODO</string>
+    <string name="tic_tac_toe">Tic Tac Toe</string>
+    <string name="checkers">Checkers</string>
 </resources>
+
+

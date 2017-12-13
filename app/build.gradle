@@ -2,7 +2,9 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 26
+
     buildToolsVersion "26.0.2"
+
     defaultConfig {
         applicationId "com.example.bleitzel.gamesapp"
         minSdkVersion 21
@@ -27,6 +29,7 @@ dependencies {
     compile 'com.android.support:appcompat-v7:26.+'
     compile 'com.android.support:support-v4:26.+'
     compile 'com.android.support:design:26.+'
+    compile 'com.backendless:backendless:4.0.4'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     testCompile 'junit:junit:4.12'
 }

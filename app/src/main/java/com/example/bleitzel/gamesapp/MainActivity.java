@@ -1,6 +1,5 @@
 package com.example.bleitzel.gamesapp;
 
-import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -17,7 +16,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
+
+import com.example.bleitzel.gamesapp.TicTacToeFolder.CLP;
+import com.example.bleitzel.gamesapp.TicTacToeFolder.Engine;
 
 
 public class MainActivity extends AppCompatActivity
@@ -25,6 +26,9 @@ public class MainActivity extends AppCompatActivity
     Fragment contentFragment = null;
 
     private Button LoginButton;
+    private Button TTTButton;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,14 +40,8 @@ public class MainActivity extends AppCompatActivity
         LoginButton = (Button) findViewById(R.id.LoginButton);
         LoginButtonOnClick loginButtonOnClick = new LoginButtonOnClick();
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+        TTTButton = (Button) findViewById(R.id.LoginButton);
+        TTTButtonOnClick tttButtonOnClickButtonOnClick = new TTTButtonOnClick();
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -55,11 +53,20 @@ public class MainActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
     }
 
+    private class TTTButtonOnClick implements  View.OnClickListener{
+
+        @Override
+        public void onClick(View view) {
+            startActivity(new Intent(MainActivity.this, Engine.class));
+        }
+
+    }
+
     private class LoginButtonOnClick implements  View.OnClickListener{
 
         @Override
         public void onClick(final View view) {
-            contentFragment = new Fragment();
+            startActivity(new Intent(MainActivity.this, Engine.class));
         }
     }
 
@@ -102,28 +109,13 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_TTT) {
-            contentFragment = new TTTFragment();
+            contentFragment = new Fragment();
         }
 
         else if (id == R.id.nav_Checkers) {
             contentFragment = new CheckersFragment();
         }
 
-        else if (id == R.id.nav_Minecraft) {
-            contentFragment = new MinecraftFragment();
-        }
-
-        else if (id == R.id.nav_CODWWII) {
-            contentFragment = new CODWWIIFragment();
-        }
-
-        else if (id == R.id.nav_Chess) {
-            contentFragment = new ChessFragment();
-        }
-
-        else if (id == R.id.nav_Roblox) {
-            contentFragment = new RobloxFragment();
-        }
         if (contentFragment != null) {
             FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
             ft.replace(R.id.content_frame, contentFragment);

@@ -1,0 +1,20 @@
+0.0.1 - 12/6/17
+Basic Files Added - Used Nav Drawer Preset
+Tic Tac Toe Files Added
+implemented GitHub
+Layout Adjusted
+Bug Fixes
+
+0.0.2 - 12-8-17
+Improved Tic Tac Toe
+Implemented Backendless
+Bug Fixes
+Layout Adjusted
+
+0.0.3 - 12/13/17
+Improved UI features
+Got login screen to pop up first
+Bug Fixes
+Added to CLP.java
+
+
