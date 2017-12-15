@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity
 
         @Override
         public void onClick(final View view) {
-            startActivity(new Intent(MainActivity.this, Engine.class));
+            startActivity(new Intent(MainActivity.this, LoginActivity.class));
         }
     }
 
@@ -124,5 +124,10 @@ public class MainActivity extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+    public void sendMessage(View view)
+    {
+        Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+        startActivity(intent);
     }
 }
